@@ -1,4 +1,4 @@
-package com.tns.userService;
+package com.tns.CustomerService;
 
 import java.util.List;
 import javax.transaction.Transactional;
@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Transactional
-public class user_Service 
+public class customer_Service 
 
 {
   @Autowired
-  private user_Service_Repository repo;
+  private customer_Service_Repository repo;
         
       public List<user> listAll()
       {
