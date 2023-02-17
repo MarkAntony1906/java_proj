@@ -1,4 +1,4 @@
-package com.tns.userService;
+package com.tns.CustomerService;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
