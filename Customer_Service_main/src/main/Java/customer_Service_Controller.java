@@ -1,4 +1,4 @@
-package com.tns.userService;
+package com.tns.CustomerService;
 
 import javax.persistence.NoResultException;
 
@@ -14,17 +14,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class user_Service_Controller 
+public class customer_Service_Controller 
 {
   @Autowired(required=true)
   private user_Service service;
   
-  @GetMapping("/userservice")
+  @GetMapping("/Customerservice")
   public java.util.List<user>list()
   {
 	  return service.listAll();
   }
-  @GetMapping("/userservice/{user_Id}")
+  @GetMapping("/Customerservice/{user_Id}")
   public ResponseEntity <user> get(@PathVariable Integer user_Id)
   {
 	  try
@@ -38,19 +38,19 @@ public class user_Service_Controller
 	  }
    
   }
-	  @PostMapping("/userservice")
+	  @PostMapping("/Customerservice")
 	  public void add(@RequestBody user user)
 	  {
 		  service.save(user);
 	  }
-	  @PutMapping ("/userservice/{user_Id}")
+	  @PutMapping ("/Customerservice/{user_Id}")
 	  public ResponseEntity<?> update(@RequestBody user user, @PathVariable Integer user_Id)
 	  {
 		  user existuser = service.get(user_Id);
 		  service.save(existuser);
 		  return new ResponseEntity<>(HttpStatus.OK);
 	  }
-	  @DeleteMapping("/userservice/{user_Id}")
+	  @DeleteMapping("/Customerservice/{user_Id}")
 	  public void delete (@PathVariable Integer user_Id)
 	  {
 		  service.delete(user_Id);
