@@ -1,13 +1,13 @@
-package com.tns.userService;
+package com.tns.CustomerService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class userServiceApplication {
+public class CustomerServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(userServiceApplication.class, args);
+		SpringApplication.run(CustomerServiceApplication.class, args);
 	}
 
 }
