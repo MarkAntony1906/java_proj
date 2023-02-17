@@ -1,7 +1,7 @@
-package com.tns.userService;
+package com.tns.CustomerService;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface user_Service_Repository extends JpaRepository<user, Integer>{
+public interface customer_Service_Repository extends JpaRepository<user, Integer>{
 
 }
